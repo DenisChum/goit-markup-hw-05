@@ -127,7 +127,35 @@ letter-spacing: 0.02em;
 
 .current {
 color: var(--accent-color);
+position: relative;
 }
+
+.nav-tittle .nav-link.current::after {
+    content: "";
+    position: absolute;
+    min-width: 48px;
+    height: 4px;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
+.nav-tittle .nav-link.current.second::after {
+    content: "";
+    position: absolute;
+    min-width: 78px;
+    height: 4px;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
 
 .nav-link:active,
 .nav-link:focus {
