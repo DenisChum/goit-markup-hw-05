@@ -812,27 +812,29 @@ border-bottom:1px solid var(--bg-portfolio-tables);
 border-left:1px solid var(--bg-portfolio-tables);
 }
 
+.img:hover::before {
+ opacity: 1;
+}
 
-
-/* .overlay-examples::before {
+.img::before {
     content: "";
     width: 100%;
     height: 100%;
     background-color: rgba(205, 167, 160, 0.5);
     display: inline-block;
     position: absolute;
-    opacity: ;
+    opacity: 0;
 }
 
-.overlay-examples:hover .examples-tables
+.overlay-examples:hover 
 {
-    opacity: ;
+    opacity: 1;
 }
 
 
-.block-examples {
+.overlay-examples{
     position: relative;
-} */
+}
 
 
 
