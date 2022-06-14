@@ -447,11 +447,31 @@ border-radius: 0px 0px 4px 4px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;
+    display: flex;
+    text-align: center;
+
+    
 }
 
 .work-item {
     position: relative;
 }
+/* 
+.wokroverloy-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    /* line-height: 1.17; */
+    /* font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 370px;
+    pading-bottom:27px;
+    pading-top:27px;
+    margin-bottom: 0;
+    margin-top: 0; */
+} */
 
 
 
@@ -864,11 +884,11 @@ border-bottom:1px solid var(--bg-portfolio-tables);
 border-left:1px solid var(--bg-portfolio-tables);
 }
 
-.img:hover::before {
+.image-examples:hover::before {
 opacity: 1;
 }
 
-.img::before {
+.image-examples::before {
 content: "";
 width: 100%;
 height: 100%;
@@ -876,6 +896,9 @@ background-color: rgba(205, 167, 160, 0.5);
 display: inline-block;
 position: absolute;
 opacity: 0;
+transition-property: opacity;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-examples:hover 
